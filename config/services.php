@@ -34,5 +34,20 @@ return [
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
+    'facebook' => [
+        'client_id' => '1745360445764505',
+        'client_secret' => '9c3cb93fc6cd6bf7ab24cd2d92a1bb32',
+        'redirect' => 'http://localhost:8000/auth/facebook/callback',
+    ],
+    'google' => [
+        'client_id' => '1008168784896-nqookp0org8lcealao769bodh06tl3fq.apps.googleusercontent.com',
+        'client_secret' => '1LtJVaTlXyZMPAcmXeFwsa00',
+        'redirect' => 'http://localhost:8000/auth/google/callback',
+    ],
+    'paypal' => [
+        'client_id' => env('PAYPAL_KEY'),
+        'client_secret' => env('PAYPAL_SECRET'),
+        'redirect' => env('PAYPAL_REDIRECT_URI'),
+    ],
 
 ];
